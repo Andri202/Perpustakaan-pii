@@ -51,4 +51,9 @@ class Jenis extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Buku::className(), ['id_jenis' => 'id']);
     }
+
+    public function getPenerbitJenis()
+    {
+        return $this->hasMany(Buku::classname(), ['id_jenis' => 'id']);
+    }
 }

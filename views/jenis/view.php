@@ -46,13 +46,16 @@ $this->params['breadcrumbs'][] = $this->title;
             </tr>
         </thead>
         <?php $i = 1; ?>
-        <?php foreach ($model->getBuku()->all() as $buku): ?>
+        <?php foreach ($model->buku as $buku): ?>
             <tr>
                 <td>
                     <?= $i++; ?>
                 </td>
                 <td>
                     <?= $buku->nama; ?>
+                </td>
+                <td>
+                    <?= $buku->getNamaJenis(); ?>
                 </td>
             </tr>
         <?php endforeach ?>
