@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+
 /**
  * This is the model class for table "peminjaman".
  *
@@ -28,7 +29,7 @@ class Peminjaman extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_buku', 'id_user', 'waktu_dipinjam', 'waktu_pengembalian'], 'required'],
+            [['id_buku', 'id_user', 'waktu_pengembalian'], 'required'],
             [['id_buku', 'id_user'], 'integer'],
             [['waktu_pengembalian','waktu_dipinjam'], 'safe']
         ];
@@ -56,5 +57,28 @@ class Peminjaman extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Buku::className(), ['id' => 'id_buku']);
     }
+
+    //     public function beforeSave($insert) {
+    //     if ( $this->isNewRecord) {
+            
+    //     }
+
+    //     //         if ($this->isNewRecord)
+    //     // $this->created = new Expression('NOW()');
+    //     // return parent::beforeSave($insert);
+    //     return parent::beforeSave();
+    // }
+
+    public function beforeSave($insert)
+    {
+        if (!parent::beforeSave($insert)) {
+            return false;
+        }
+
+        // ...custom code here...
+         $this->waktu_dipinjam = date('Y-m-d');
+        return true;
+    }
+     
 
 }

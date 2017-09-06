@@ -8,8 +8,6 @@ use app\models\User;
 
 use kartik\date\DatePicker;
 
-$model->waktu_dipinjam=date('Y-m-d');
-
 /* @var $this yii\web\View */
 /* @var $model app\models\Peminjaman */
 /* @var $form yii\widgets\ActiveForm */
@@ -29,16 +27,6 @@ $model->waktu_dipinjam=date('Y-m-d');
     	User::getListUser(),
     	['prompt'=>'Pilih User']
     	)
-    ?>
-
- 	<?=  $form-> field($model, 'waktu_dipinjam')->widget(DatePicker::classname(), [
-			'type' => DatePicker::TYPE_COMPONENT_APPEND,
-			'options' => ['placeholder' => 'Tanggal Pinjam'],
-            'pluginOptions' => [
-                'autoclose' => true,
-                'format' => 'yyyy-mm-dd', 
-            ]
-        ]);
     ?>
 	
 	<?= $form->field($model, 'waktu_pengembalian')->widget(DatePicker::classname(),[

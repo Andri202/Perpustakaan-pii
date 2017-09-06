@@ -9,6 +9,11 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+use yii\db\Query;
+use yii\db\BaseActiveRecord;
+
+
+
 /**
  * PeminjamanController implements the CRUD actions for Peminjaman model.
  */
@@ -61,9 +66,12 @@ class PeminjamanController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
+
     public function actionCreate()
     {
         $model = new Peminjaman();
+
+        //$model->waktu_dipinjam = ;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);

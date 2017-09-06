@@ -16905,3 +16905,1436 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1504665957.571
     'REQUEST_TIME' => 1504665957
 ]
+2017-09-06 06:38:45 [::1][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\web\View::getListBuku() in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\xampp\htdocs\perpus\views\peminjaman\_form.php(23): yii\base\Component->__call('getListBuku', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\perpus\views\peminjaman\create.php(18): yii\base\View->render('_form', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(app\controllers\PeminjamanController))
+#9 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#15 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-09-06 06:38:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52674'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504672724.922
+    'REQUEST_TIME' => 1504672724
+]
+2017-09-06 06:38:58 [::1][-][-][error][Error] Error: Call to undefined function getListBuku() in C:\xampp\htdocs\perpus\views\peminjaman\_form.php:22
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#3 C:\xampp\htdocs\perpus\views\peminjaman\create.php(18): yii\base\View->render('_form', Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(app\controllers\PeminjamanController))
+#8 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2017-09-06 06:38:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52678'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504672738.826
+    'REQUEST_TIME' => 1504672738
+]
+2017-09-06 06:39:13 [::1][-][-][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: yii\web\View::getListBuku() in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 C:\xampp\htdocs\perpus\views\peminjaman\_form.php(23): yii\base\Component->__call('getListBuku', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\perpus\views\peminjaman\create.php(18): yii\base\View->render('_form', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(app\controllers\PeminjamanController))
+#9 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#15 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-09-06 06:39:13 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52683'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504672753.714
+    'REQUEST_TIME' => 1504672753
+]
+2017-09-06 06:39:32 [::1][-][-][error][Error] Error: Class 'app\models\ArrayHelper' not found in C:\xampp\htdocs\perpus\models\Peminjaman.php:62
+Stack trace:
+#0 C:\xampp\htdocs\perpus\views\peminjaman\_form.php(23): app\models\Peminjaman::getListBuku()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\perpus\views\peminjaman\create.php(18): yii\base\View->render('_form', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(app\controllers\PeminjamanController))
+#9 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#15 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-09-06 06:39:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52687'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504672772.035
+    'REQUEST_TIME' => 1504672772
+]
+2017-09-06 06:39:52 [::1][-][-][error][Error] Error: Class 'app\models\ArrayHelper' not found in C:\xampp\htdocs\perpus\models\Peminjaman.php:62
+Stack trace:
+#0 C:\xampp\htdocs\perpus\views\peminjaman\_form.php(23): app\models\Peminjaman->getListBuku()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\perpus\views\peminjaman\create.php(18): yii\base\View->render('_form', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(app\controllers\PeminjamanController))
+#9 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#15 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-09-06 06:39:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52691'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504672792.622
+    'REQUEST_TIME' => 1504672792
+]
+2017-09-06 06:40:22 [::1][-][-][error][Error] Error: Class 'Peminjaman' not found in C:\xampp\htdocs\perpus\views\peminjaman\_form.php:23
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#3 C:\xampp\htdocs\perpus\views\peminjaman\create.php(18): yii\base\View->render('_form', Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(app\controllers\PeminjamanController))
+#8 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2017-09-06 06:40:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52695'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504672822.505
+    'REQUEST_TIME' => 1504672822
+]
+2017-09-06 06:40:41 [::1][-][-][error][Error] Error: Class 'app\models\ArrayHelper' not found in C:\xampp\htdocs\perpus\models\Peminjaman.php:62
+Stack trace:
+#0 C:\xampp\htdocs\perpus\views\peminjaman\_form.php(24): app\models\Peminjaman::getListBuku()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\perpus\views\peminjaman\create.php(18): yii\base\View->render('_form', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(app\controllers\PeminjamanController))
+#9 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#15 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-09-06 06:40:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52699'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504672841.284
+    'REQUEST_TIME' => 1504672841
+]
+2017-09-06 06:41:03 [::1][-][-][error][Error] Error: Call to undefined function getListBuku() in C:\xampp\htdocs\perpus\views\peminjaman\_form.php:22
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#3 C:\xampp\htdocs\perpus\views\peminjaman\create.php(18): yii\base\View->render('_form', Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(app\controllers\PeminjamanController))
+#8 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2017-09-06 06:41:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52703'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504672863.713
+    'REQUEST_TIME' => 1504672863
+]
+2017-09-06 06:41:11 [::1][-][-][error][Error] Error: Class 'app\models\ArrayHelper' not found in C:\xampp\htdocs\perpus\models\Peminjaman.php:62
+Stack trace:
+#0 C:\xampp\htdocs\perpus\views\peminjaman\_form.php(23): app\models\Peminjaman->getListBuku()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\perpus\views\peminjaman\create.php(18): yii\base\View->render('_form', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(app\controllers\PeminjamanController))
+#9 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#15 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-09-06 06:41:11 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52707'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504672871.039
+    'REQUEST_TIME' => 1504672871
+]
+2017-09-06 06:42:05 [::1][-][-][error][Error] Error: Class 'app\helpers\ArrayHelper' not found in C:\xampp\htdocs\perpus\models\Peminjaman.php:64
+Stack trace:
+#0 C:\xampp\htdocs\perpus\views\peminjaman\_form.php(23): app\models\Peminjaman->getListBuku()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\perpus\views\peminjaman\create.php(18): yii\base\View->render('_form', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('create', Array, Object(app\controllers\PeminjamanController))
+#9 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#15 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-09-06 06:42:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52711'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504672925.602
+    'REQUEST_TIME' => 1504672925
+]
+2017-09-06 06:48:59 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'waktu_pengembalian' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp\htdocs\perpus\models\Peminjaman.php:61
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Pemi...')
+#1 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(66): spl_autoload_call('app\\models\\Pemi...')
+#2 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-09-06 06:48:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52740'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504673339.319
+    'REQUEST_TIME' => 1504673339
+]
+2017-09-06 06:49:23 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected ''waktu_pengembalian'' (T_CONSTANT_ENCAPSED_STRING), expecting function (T_FUNCTION) or const (T_CONST) in C:\xampp\htdocs\perpus\models\Peminjaman.php:61
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Pemi...')
+#1 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(66): spl_autoload_call('app\\models\\Pemi...')
+#2 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-09-06 06:49:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52744'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504673363.502
+    'REQUEST_TIME' => 1504673363
+]
+2017-09-06 06:50:51 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '=', expecting ';' in C:\xampp\htdocs\perpus\models\Peminjaman.php:63
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Pemi...')
+#1 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(66): spl_autoload_call('app\\models\\Pemi...')
+#2 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-09-06 06:50:51 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52749'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504673451.767
+    'REQUEST_TIME' => 1504673451
+]
+2017-09-06 08:20:36 [::1][-][-][error][Error] Error: Class 'app\controllers\CDbExpression' not found in C:\xampp\htdocs\perpus\controllers\PeminjamanController.php:70
+Stack trace:
+#0 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2017-09-06 08:20:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '53301'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504678836.444
+    'REQUEST_TIME' => 1504678836
+]
+2017-09-06 08:21:26 [::1][-][-][error][Error] Error: Class 'app\controllers\CDbExpression' not found in C:\xampp\htdocs\perpus\controllers\PeminjamanController.php:70
+Stack trace:
+#0 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2017-09-06 08:21:26 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '53310'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504678886.388
+    'REQUEST_TIME' => 1504678886
+]
+2017-09-06 09:07:39 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Declaration of app\models\Peminjaman::beforeSave() should be compatible with yii\db\BaseActiveRecord::beforeSave($insert) in C:\xampp\htdocs\perpus\models\Peminjaman.php:16
+Stack trace:
+#0 C:\xampp\htdocs\perpus\models\Peminjaman.php(16): yii\base\ErrorHandler->handleError(2, 'Declaration of ...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\BaseYii.php(292): include('C:\\xampp\\htdocs...')
+#2 [internal function]: yii\BaseYii::autoload('app\\models\\Pemi...')
+#3 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): spl_autoload_call('app\\models\\Pemi...')
+#4 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2017-09-06 09:07:39 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_POST = [
+    '_csrf' => 'H-hhnlM3M-vUC-_rbZajJlMhaCWauDE7vWdKaJgcVRnDVP-CGYXvxRrdlabXOdE-mHcQDzNQxB9skq6XxkdLiA=='
+    'Peminjaman' => [
+        'id_buku' => '1'
+        'id_user' => '1'
+        'waktu_pengembalian' => '2017-09-30'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '196'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '54199'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504681659.529
+    'REQUEST_TIME' => 1504681659
+]
+2017-09-06 09:14:13 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected ''waktu_dipinjam'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in C:\xampp\htdocs\perpus\models\Peminjaman.php:68
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\models\\Pemi...')
+#1 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(72): spl_autoload_call('app\\models\\Pemi...')
+#2 [internal function]: app\controllers\PeminjamanController->actionCreate()
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/crea...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-09-06 09:14:13 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/create'
+]
+
+$_POST = [
+    '_csrf' => 'oS6mY0-ruXE_kQFTm5kNoOuS18cWiPY4q9Nqn5zjmyV9kjh_BRllX_FHex4hNn-4IMSv7b9gAxx6Jo5gwriFtA=='
+    'Peminjaman' => [
+        'id_buku' => '1'
+        'id_user' => '1'
+        'waktu_pengembalian' => '2017-09-29'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '196'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '54482'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=peminjaman%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504682053.081
+    'REQUEST_TIME' => 1504682053
+]
+2017-09-06 09:40:23 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '"Data Peminjaman"' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in C:\xampp\htdocs\perpus\views\peminjaman\view.php:11
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('view', Array, Object(app\controllers\PeminjamanController))
+#3 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(60): yii\base\Controller->render('view', Array)
+#4 [internal function]: app\controllers\PeminjamanController->actionView('6')
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('view', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/view', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2017-09-06 09:40:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/view'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '55071'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fview&id=6'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fview&id=6'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504683623.065
+    'REQUEST_TIME' => 1504683623
+]
+2017-09-06 09:40:47 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Peminjaman::Data Peminjaman in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('Data Peminjaman')
+#1 C:\xampp\htdocs\perpus\views\peminjaman\view.php(11): yii\db\BaseActiveRecord->__get('Data Peminjaman')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('view', Array, Object(app\controllers\PeminjamanController))
+#6 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(60): yii\base\Controller->render('view', Array)
+#7 [internal function]: app\controllers\PeminjamanController->actionView('6')
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('view', Array)
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/view', Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2017-09-06 09:40:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/view'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '55075'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fview&id=6'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fview&id=6'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504683647.751
+    'REQUEST_TIME' => 1504683647
+]
+2017-09-06 09:41:26 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Peminjaman::Data Peminjaman in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('Data Peminjaman')
+#1 C:\xampp\htdocs\perpus\views\peminjaman\view.php(11): yii\db\BaseActiveRecord->__get('Data Peminjaman')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PeminjamanController))
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('view', Array, Object(app\controllers\PeminjamanController))
+#6 C:\xampp\htdocs\perpus\controllers\PeminjamanController.php(60): yii\base\Controller->render('view', Array)
+#7 [internal function]: app\controllers\PeminjamanController->actionView('7')
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('view', Array)
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('peminjaman/view', Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2017-09-06 09:41:26 [::1][-][-][info][application] $_GET = [
+    'r' => 'peminjaman/view'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Ü¼žJ²Ü.ÎÖzMº¯rËVx*©èõ$Ñõäÿ^[‘\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=d9baef841bfdb96e46145c8e24036301299c2f99409ae76aa7e1b82e8f218c37a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DC%BC%9E%1CJ%B2%DC.%CE%D6zM%BA%AFr%18%CBVx%2A%A9%E8%F5%24%D1%F5%E4%FF%5E%5B%1E%91%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '55083'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=peminjaman%2Fview&id=7'
+    'REQUEST_URI' => '/perpus/web/index.php?r=peminjaman%2Fview&id=7'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1504683686.127
+    'REQUEST_TIME' => 1504683686
+]
