@@ -71,13 +71,12 @@ class Peminjaman extends \yii\db\ActiveRecord
 
     public function beforeSave($insert)
     {
-        if (!parent::beforeSave($insert)) {
-            return false;
-        }
-
+        if ($insert === true) {
+            $this->waktu_dipinjam = date('Y-m-d');
+        } 
+    
         // ...custom code here...
-         $this->waktu_dipinjam = date('Y-m-d');
-        return true;
+        return parent::beforeSave($insert);
     }
      
 

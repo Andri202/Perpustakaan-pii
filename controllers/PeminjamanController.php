@@ -11,6 +11,7 @@ use yii\filters\VerbFilter;
 
 use yii\db\Query;
 use yii\db\BaseActiveRecord;
+use yii\filters\AccessControl;
 
 
 
@@ -25,6 +26,16 @@ class PeminjamanController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['index','create','update','view'],
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

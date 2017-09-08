@@ -8,6 +8,7 @@ use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * JenisController implements the CRUD actions for Jenis model.
@@ -19,7 +20,18 @@ class JenisController extends Controller
      */
     public function behaviors()
     {
+        'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['index','create','update','view'],
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
         return [
+            'access' =>
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

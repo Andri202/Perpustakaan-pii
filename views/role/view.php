@@ -4,13 +4,13 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\User */
+/* @var $model app\models\Role */
 
 $this->title = $model->nama;
-$this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Roles', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="user-view">
+<div class="role-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -28,18 +28,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
+            'id',
             'nama',
-            'username',
-            [
-                'attribute' => 'role',
-                'label' => 'Nama User',
-                'value' => function($data){
-                    return $data->roleInfo->nama;
-                }
-            ],
         ],
     ]) ?>
-
-
 
 </div>

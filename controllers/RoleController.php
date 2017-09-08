@@ -3,17 +3,17 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\JenisKelamin;
-use app\models\JenisKelaminSearch;
+use app\models\Role;
+use app\models\RoleSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 
 /**
- * JenisKelaminController implements the CRUD actions for JenisKelamin model.
+ * RoleController implements the CRUD actions for Role model.
  */
-class JenisKelaminController extends Controller
+class RoleController extends Controller
 {
     /**
      * @inheritdoc
@@ -21,7 +21,7 @@ class JenisKelaminController extends Controller
     public function behaviors()
     {
         return [
-        'access' => [
+            'access' => [
                 'class' => AccessControl::className(),
                 'only' => ['index','create','update','view'],
                 'rules' => [
@@ -41,12 +41,12 @@ class JenisKelaminController extends Controller
     }
 
     /**
-     * Lists all JenisKelamin models.
+     * Lists all Role models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new JenisKelaminSearch();
+        $searchModel = new RoleSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -56,7 +56,7 @@ class JenisKelaminController extends Controller
     }
 
     /**
-     * Displays a single JenisKelamin model.
+     * Displays a single Role model.
      * @param integer $id
      * @return mixed
      */
@@ -68,13 +68,13 @@ class JenisKelaminController extends Controller
     }
 
     /**
-     * Creates a new JenisKelamin model.
+     * Creates a new Role model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new JenisKelamin();
+        $model = new Role();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -86,7 +86,7 @@ class JenisKelaminController extends Controller
     }
 
     /**
-     * Updates an existing JenisKelamin model.
+     * Updates an existing Role model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -105,7 +105,7 @@ class JenisKelaminController extends Controller
     }
 
     /**
-     * Deletes an existing JenisKelamin model.
+     * Deletes an existing Role model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -118,15 +118,15 @@ class JenisKelaminController extends Controller
     }
 
     /**
-     * Finds the JenisKelamin model based on its primary key value.
+     * Finds the Role model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return JenisKelamin the loaded model
+     * @return Role the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = JenisKelamin::findOne($id)) !== null) {
+        if (($model = Role::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

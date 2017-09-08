@@ -4,10 +4,12 @@ namespace app\controllers;
 
 use Yii;
 use app\models\User;
+use app\models\UserSearch;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * UserController implements the CRUD actions for User model.
@@ -20,6 +22,16 @@ class UserController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['index','create','update','view'],
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -35,13 +47,21 @@ class UserController extends Controller
      */
     public function actionIndex()
     {
-        $dataProvider = new ActiveDataProvider([
-            'query' => User::find(),
-        ]);
+        $searchModel = new UserSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index', [
+        return $this->render('index',[
+            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-        ]);
+            ]);
+
+        // $dataProvider = new ActiveDataProvider([
+        //     'query' => User::find(),
+        // ]);
+
+        // return $this->render('index', [
+        //     'dataProvider' => $dataProvider,
+        // ]);
     }
 
     /**
@@ -65,7 +85,10 @@ class UserController extends Controller
     {
         $model = new User();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        
+        if ($model->load(Yii::$app->request->post())) {
+            $model->password = Yii::$app->getSecurity()->generatePasswordHash($model->password);
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
