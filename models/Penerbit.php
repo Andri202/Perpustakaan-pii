@@ -44,4 +44,10 @@ class Penerbit extends \yii\db\ActiveRecord
      public function getList(){
         return ArrayHelper::map(Penerbit::find()->all(), 'id','nama');
     }
+
+    public static function getHitungPenerbit(){
+        $count = Penerbit::find()
+        ->count();
+        return $count;
+    } 
 }

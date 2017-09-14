@@ -30,6 +30,16 @@ class SiteController extends Controller
                 ],
 
             ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['index','create','update','view'],
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
 
             'verbs' => [
                 'class' => VerbFilter::className(),
@@ -73,6 +83,8 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        
+        $this->layout = 'login-main';
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }

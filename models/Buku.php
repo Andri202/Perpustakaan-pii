@@ -102,6 +102,12 @@ class Buku extends \yii\db\ActiveRecord
         }
 
         
+    }
+    
+    public static function getHitungBuku(){
+        $count = Buku::find()
+        ->count();
+        return $count;
     } 
 
 }

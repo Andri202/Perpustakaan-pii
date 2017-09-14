@@ -132,4 +132,38 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
     {
         return $this->hasOne(Role::className(), ['id' => 'role']);
     }
+
+    public static function isAdmin()
+    {
+        if(Yii::$app->user->identity->role == 1){
+            return true;
+        } else{
+            return false;
+        }
+ 
+        return false;
+    }
+
+    public static function isUser()
+    {
+        if(Yii::$app->user->identity->role == 2){
+            return true;
+        } else{
+            return false;
+        }       
+    }
+
+       public static function getAdminCrud()
+    {
+        // if(Yii::$app->user->identity->role == 1){
+        //     return "'yii\grid\ActionColumn'";
+        // } else{
+        //     return "ActionColumn::className(),'template'=>'{view}'";
+        // }
+ 
+        return '{view}';
+    }
+
+
+
 }

@@ -60,5 +60,11 @@ class Penulis extends \yii\db\ActiveRecord
         return ArrayHelper::map(Penulis::find()->all(), 'id','nama');
     }
 
+    public static function getHitungPenulis(){
+        $count = Penulis::find()
+        ->count();
+        return $count;
+    } 
+
 
 }

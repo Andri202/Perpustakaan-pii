@@ -26,6 +26,7 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body>
+<div class="login-bg">
 <?php $this->beginBody() ?>
 
 <div class="wrap">
@@ -119,6 +120,8 @@ AppAsset::register($this);
 </footer>
 
 <?php $this->endBody() ?>
+</div>
 </body>
 </html>
 <?php $this->endPage() ?>
+
