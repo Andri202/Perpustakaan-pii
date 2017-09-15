@@ -6,6 +6,7 @@ use Yii;
 
 use yii\helpers\ArrayHelper;
 use yii\db\ActiveRecord;
+use yii\helpers\Html;
 
 /**
  * This is the model class for table "user".
@@ -34,7 +35,7 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
         return [
             [['nama', 'username', 'password', 'role'], 'required'],
             [['role'], 'integer'],
-            [['token'], 'safe'],
+            [['token','img'], 'safe'],
             [['nama', 'username', 'password'], 'string', 'max' => 255],
 
         ];
@@ -52,6 +53,7 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
             'password' => 'Password',
             'role' => 'Role',
             'token'=> 'Token',
+            'img'=> 'Gambar',
         ];
     }
 
@@ -153,17 +155,8 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
         }       
     }
 
-       public static function getAdminCrud()
+    public function getImg($htmlOptions=[])
     {
-        // if(Yii::$app->user->identity->role == 1){
-        //     return "'yii\grid\ActionColumn'";
-        // } else{
-        //     return "ActionColumn::className(),'template'=>'{view}'";
-        // }
- 
-        return '{view}';
+        return Html::img('@web/img/'.$this->img,$htmlOptions);
     }
-
-
-
 }

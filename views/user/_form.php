@@ -20,6 +20,8 @@ use app\models\Role;
 
     <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'img')->fileinput() ?>
+
 	<?= $form->field($model, 'role')->dropDownList(
 		Role::getListRole(),
 		['prompt' => 'Pilih User']

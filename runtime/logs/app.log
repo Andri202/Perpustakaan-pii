@@ -50405,3 +50405,2929 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1505207826.701
     'REQUEST_TIME' => 1505207826
 ]
+2017-09-14 04:46:18 [::1][-][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/login', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2017-09-14 04:46:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'rPxRoEyxbRiGmBf3JzamH8OQojGHAACp1GIiVd-BpS_H6bWztEb54BELGt1owiBvwBSyZwxnqY9h0s6gag05zg=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '7d7fdb795c51a437f82ad1e02730dd536723e241c749b2c8f949dbb2b06a11c0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"^oïÇþ-Ý«•Ü§|àŠ+é†(ÁµB›ï,†’H\";}'
+    'PHPSESSID' => 'hoi3ldp0jugj85hj2d4gq5q8ie'
+    '_identity' => 'a042b2b0a655409fdbd585996866e6ffb5d8a4cf69bf5aebb970cafe6d8921b6a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[3,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '228'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=7d7fdb795c51a437f82ad1e02730dd536723e241c749b2c8f949dbb2b06a11c0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1C%5Eo%EF%C7%FE-%DD%AB%95%1C%7F%01%DC%A7%7C%E0%8A%2B%E9%86%28%C1%B5B%9B%EF%2C%86%92H%8F%22%3B%7D; PHPSESSID=hoi3ldp0jugj85hj2d4gq5q8ie; _identity=a042b2b0a655409fdbd585996866e6ffb5d8a4cf69bf5aebb970cafe6d8921b6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B3%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '49915'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/perpus/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505357178.368
+    'REQUEST_TIME' => 1505357178
+]
+2017-09-14 04:46:32 [::1][-][hoi3ldp0jugj85hj2d4gq5q8ie][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/login', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2017-09-14 04:46:32 [::1][-][hoi3ldp0jugj85hj2d4gq5q8ie][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'rPxRoEyxbRiGmBf3JzamH8OQojGHAACp1GIiVd-BpS_H6bWztEb54BELGt1owiBvwBSyZwxnqY9h0s6gag05zg=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '7d7fdb795c51a437f82ad1e02730dd536723e241c749b2c8f949dbb2b06a11c0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"^oïÇþ-Ý«•Ü§|àŠ+é†(ÁµB›ï,†’H\";}'
+    'PHPSESSID' => 'hoi3ldp0jugj85hj2d4gq5q8ie'
+    '_identity' => 'a042b2b0a655409fdbd585996866e6ffb5d8a4cf69bf5aebb970cafe6d8921b6a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[3,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '228'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=7d7fdb795c51a437f82ad1e02730dd536723e241c749b2c8f949dbb2b06a11c0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1C%5Eo%EF%C7%FE-%DD%AB%95%1C%7F%01%DC%A7%7C%E0%8A%2B%E9%86%28%C1%B5B%9B%EF%2C%86%92H%8F%22%3B%7D; PHPSESSID=hoi3ldp0jugj85hj2d4gq5q8ie; _identity=a042b2b0a655409fdbd585996866e6ffb5d8a4cf69bf5aebb970cafe6d8921b6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B3%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '49917'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/perpus/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505357192.452
+    'REQUEST_TIME' => 1505357192
+]
+2017-09-14 05:03:55 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in C:\xampp\htdocs\perpus\views\layouts\left.php:56
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#2 C:\xampp\htdocs\perpus\views\layouts\main.php(50): yii\base\View->render('left.php', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#7 C:\xampp\htdocs\perpus\controllers\SiteController.php(76): yii\base\Controller->render('index')
+#8 [internal function]: app\controllers\SiteController->actionIndex()
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-09-14 05:03:55 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][info][application] $_COOKIE = [
+    '_csrf' => '6ba6db1624c31c74733b02a27cbfd22f17e1a05fc02bfacea78d80390d1f5fd9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"´ö7EÐÿ„žÀnFäõ´›aSfâCF]V’[êêõ²\";}'
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6ba6db1624c31c74733b02a27cbfd22f17e1a05fc02bfacea78d80390d1f5fd9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%B4%F67E%D0%FF%84%0B%9E%C0nF%E4%F5%B4%9BaSf%E2CF%5DV%92%5B%9D%EA%EA%1B%F5%B2%22%3B%7D; PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '50427'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/perpus/web/index.php'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505358235.205
+    'REQUEST_TIME' => 1505358235
+]
+2017-09-14 05:10:26 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][error][ParseError] ParseError: syntax error, unexpected ')', expecting ']' in C:\xampp\htdocs\perpus\views\layouts\left.php:72
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#2 C:\xampp\htdocs\perpus\views\layouts\main.php(50): yii\base\View->render('left.php', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PenulisController))
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="pen...')
+#7 C:\xampp\htdocs\perpus\controllers\PenulisController.php(54): yii\base\Controller->render('index', Array)
+#8 [internal function]: app\controllers\PenulisController->actionIndex()
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('penulis/index', Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-09-14 05:10:26 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][info][application] $_GET = [
+    'r' => 'penulis/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '6ba6db1624c31c74733b02a27cbfd22f17e1a05fc02bfacea78d80390d1f5fd9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"´ö7EÐÿ„žÀnFäõ´›aSfâCF]V’[êêõ²\";}'
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=penerbit%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6ba6db1624c31c74733b02a27cbfd22f17e1a05fc02bfacea78d80390d1f5fd9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%B4%F67E%D0%FF%84%0B%9E%C0nF%E4%F5%B4%9BaSf%E2CF%5DV%92%5B%9D%EA%EA%1B%F5%B2%22%3B%7D; PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '50771'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=penulis%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=penulis%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505358626.425
+    'REQUEST_TIME' => 1505358626
+]
+2017-09-14 05:23:45 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in C:\xampp\htdocs\perpus\views\layouts\left.php:54
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#2 C:\xampp\htdocs\perpus\views\layouts\main.php(50): yii\base\View->render('left.php', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PenulisController))
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="pen...')
+#7 C:\xampp\htdocs\perpus\controllers\PenulisController.php(54): yii\base\Controller->render('index', Array)
+#8 [internal function]: app\controllers\PenulisController->actionIndex()
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('penulis/index', Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-09-14 05:23:45 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][info][application] $_GET = [
+    'r' => 'penulis/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_csrf' => 'eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯ö‘Ô•rm½Ý7ïht£ï-+³w$ÚcW™ ³™¢\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=penulis%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _csrf=eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AF%F6%91%D4%95%02rm%BD%DD7%EFht%1A%A3%EF-%2B%B3w%24%13%DAc%8DW%99%A0%B3%99%A2%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '51106'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=penulis%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=penulis%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505359425.783
+    'REQUEST_TIME' => 1505359425
+]
+2017-09-14 05:27:48 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][error][Error] Error: Class 'Html' not found in C:\xampp\htdocs\perpus\views\layouts\left.php:45
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#3 C:\xampp\htdocs\perpus\views\layouts\main.php(50): yii\base\View->render('left.php', Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PenulisController))
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="pen...')
+#8 C:\xampp\htdocs\perpus\controllers\PenulisController.php(54): yii\base\Controller->render('index', Array)
+#9 [internal function]: app\controllers\PenulisController->actionIndex()
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('penulis/index', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2017-09-14 05:27:48 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][info][application] $_GET = [
+    'r' => 'penulis/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_csrf' => 'eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯ö‘Ô•rm½Ý7ïht£ï-+³w$ÚcW™ ³™¢\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=penulis%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _csrf=eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AF%F6%91%D4%95%02rm%BD%DD7%EFht%1A%A3%EF-%2B%B3w%24%13%DAc%8DW%99%A0%B3%99%A2%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '51253'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=penulis%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=penulis%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505359668.35
+    'REQUEST_TIME' => 1505359668
+]
+2017-09-14 05:28:26 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][error][yii\base\ErrorException:2] yii\base\ErrorException: Illegal string offset 'label' in C:\xampp\htdocs\perpus\vendor\dmstr\yii2-adminlte-asset\widgets\Menu.php:144
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\dmstr\yii2-adminlte-asset\widgets\Menu.php(144): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 144, Array)
+#1 C:\xampp\htdocs\perpus\vendor\dmstr\yii2-adminlte-asset\widgets\Menu.php(58): dmstr\widgets\Menu->normalizeItems(Array, '<span class="ke...')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Widget.php(139): dmstr\widgets\Menu->run()
+#3 C:\xampp\htdocs\perpus\views\layouts\left.php(55): yii\base\Widget::widget(Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#7 C:\xampp\htdocs\perpus\views\layouts\main.php(50): yii\base\View->render('left.php', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\PenulisController))
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="pen...')
+#12 C:\xampp\htdocs\perpus\controllers\PenulisController.php(54): yii\base\Controller->render('index', Array)
+#13 [internal function]: app\controllers\PenulisController->actionIndex()
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#17 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('penulis/index', Array)
+#18 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-09-14 05:28:26 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][info][application] $_GET = [
+    'r' => 'penulis/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_csrf' => 'eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯ö‘Ô•rm½Ý7ïht£ï-+³w$ÚcW™ ³™¢\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=penulis%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _csrf=eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AF%F6%91%D4%95%02rm%BD%DD7%EFht%1A%A3%EF-%2B%B3w%24%13%DAc%8DW%99%A0%B3%99%A2%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '51260'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=penulis%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=penulis%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505359706.442
+    'REQUEST_TIME' => 1505359706
+]
+2017-09-14 05:31:27 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/security/logout". in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/security/l...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-09-14 05:31:27 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][info][application] $_GET = [
+    'r' => 'user/security/logout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_csrf' => 'eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯ö‘Ô•rm½Ý7ïht£ï-+³w$ÚcW™ ³™¢\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=penulis%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _csrf=eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AF%F6%91%D4%95%02rm%BD%DD7%EFht%1A%A3%EF-%2B%B3w%24%13%DAc%8DW%99%A0%B3%99%A2%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '51379'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fsecurity%2Flogout'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Fsecurity%2Flogout'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505359887.056
+    'REQUEST_TIME' => 1505359887
+]
+2017-09-14 05:32:01 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This url can only handle the following request methods: POST. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\filters\VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-09-14 05:32:01 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_csrf' => 'eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯ö‘Ô•rm½Ý7ïht£ï-+³w$ÚcW™ ³™¢\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _csrf=eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AF%F6%91%D4%95%02rm%BD%DD7%EFht%1A%A3%EF-%2B%B3w%24%13%DAc%8DW%99%A0%B3%99%A2%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '51385'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/perpus/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505359921.648
+    'REQUEST_TIME' => 1505359921
+]
+2017-09-14 05:32:46 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This url can only handle the following request methods: POST. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\filters\VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-09-14 05:32:46 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_csrf' => 'eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯ö‘Ô•rm½Ý7ïht£ï-+³w$ÚcW™ ³™¢\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _csrf=eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AF%F6%91%D4%95%02rm%BD%DD7%EFht%1A%A3%EF-%2B%B3w%24%13%DAc%8DW%99%A0%B3%99%A2%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '51423'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/perpus/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505359966.883
+    'REQUEST_TIME' => 1505359966
+]
+2017-09-14 05:37:17 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This url can only handle the following request methods: POST. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\filters\VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-09-14 05:37:17 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_csrf' => 'eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯ö‘Ô•rm½Ý7ïht£ï-+³w$ÚcW™ ³™¢\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _csrf=eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AF%F6%91%D4%95%02rm%BD%DD7%EFht%1A%A3%EF-%2B%B3w%24%13%DAc%8DW%99%A0%B3%99%A2%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '51625'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/perpus/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505360237.119
+    'REQUEST_TIME' => 1505360237
+]
+2017-09-14 05:37:37 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This url can only handle the following request methods: POST. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\filters\VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-09-14 05:37:37 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_csrf' => 'eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯ö‘Ô•rm½Ý7ïht£ï-+³w$ÚcW™ ³™¢\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _csrf=eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AF%F6%91%D4%95%02rm%BD%DD7%EFht%1A%A3%EF-%2B%B3w%24%13%DAc%8DW%99%A0%B3%99%A2%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '51631'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/perpus/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505360257.223
+    'REQUEST_TIME' => 1505360257
+]
+2017-09-14 05:38:38 [::1][7][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This url can only handle the following request methods: POST. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\filters\VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-09-14 05:38:38 [::1][7][-][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_csrf' => 'eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯ö‘Ô•rm½Ý7ïht£ï-+³w$ÚcW™ ³™¢\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _csrf=eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AF%F6%91%D4%95%02rm%BD%DD7%EFht%1A%A3%EF-%2B%B3w%24%13%DAc%8DW%99%A0%B3%99%A2%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '51635'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/perpus/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505360318.923
+    'REQUEST_TIME' => 1505360318
+]
+2017-09-14 05:41:58 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This url can only handle the following request methods: POST. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\filters\VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-09-14 05:41:58 [::1][7][u6kq111tpuv3oqea08jpe9kvq4][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u6kq111tpuv3oqea08jpe9kvq4'
+    '_csrf' => 'eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¯ö‘Ô•rm½Ý7ïht£ï-+³w$ÚcW™ ³™¢\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=u6kq111tpuv3oqea08jpe9kvq4; _csrf=eba4113346320c0750af28f59c97a70a84e73d1c46eec96b75bdce1b3540e34fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%AF%F6%91%D4%95%02rm%BD%DD7%EFht%1A%A3%EF-%2B%B3w%24%13%DAc%8DW%99%A0%B3%99%A2%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '51656'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/perpus/web/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505360518.693
+    'REQUEST_TIME' => 1505360518
+]
+2017-09-14 06:08:52 [::1][7][p32e27h2c46mh5k634o913t5vo][error][Error] Error: Call to undefined method app\models\Buku::getHitungPenulis() in C:\xampp\htdocs\perpus\views\site\index.php:76
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#4 C:\xampp\htdocs\perpus\controllers\SiteController.php(76): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2017-09-14 06:08:52 [::1][7][p32e27h2c46mh5k634o913t5vo][info][application] $_COOKIE = [
+    '_csrf' => 'a9d36371786100cbf5e0f30abda5aeafb5eca2053d4efcee38aa7b228af6d689a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ÜDÔê¸ÀI27{T»½m’ØIœÔ%ÉËÀþ¢È˜KÒð\";}'
+    'PHPSESSID' => 'p32e27h2c46mh5k634o913t5vo'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=site%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a9d36371786100cbf5e0f30abda5aeafb5eca2053d4efcee38aa7b228af6d689a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DCD%D4%EA%B8%C0I27%7BT%BB%BDm%92%D8I%9C%D4%25%C9%CB%C0%FE%03%A2%C8%98K%1B%D2%F0%22%3B%7D; PHPSESSID=p32e27h2c46mh5k634o913t5vo; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52029'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/perpus/web/index.php'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505362132.493
+    'REQUEST_TIME' => 1505362132
+]
+2017-09-14 06:09:08 [::1][7][p32e27h2c46mh5k634o913t5vo][error][Error] Error: Call to undefined method app\models\Buku::getHitungPenulis() in C:\xampp\htdocs\perpus\views\site\index.php:76
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#4 C:\xampp\htdocs\perpus\controllers\SiteController.php(76): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2017-09-14 06:09:08 [::1][7][p32e27h2c46mh5k634o913t5vo][info][application] $_COOKIE = [
+    '_csrf' => 'a9d36371786100cbf5e0f30abda5aeafb5eca2053d4efcee38aa7b228af6d689a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ÜDÔê¸ÀI27{T»½m’ØIœÔ%ÉËÀþ¢È˜KÒð\";}'
+    'PHPSESSID' => 'p32e27h2c46mh5k634o913t5vo'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=site%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a9d36371786100cbf5e0f30abda5aeafb5eca2053d4efcee38aa7b228af6d689a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DCD%D4%EA%B8%C0I27%7BT%BB%BDm%92%D8I%9C%D4%25%C9%CB%C0%FE%03%A2%C8%98K%1B%D2%F0%22%3B%7D; PHPSESSID=p32e27h2c46mh5k634o913t5vo; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52036'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/perpus/web/index.php'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505362148.077
+    'REQUEST_TIME' => 1505362148
+]
+2017-09-14 06:09:19 [::1][7][p32e27h2c46mh5k634o913t5vo][error][Error] Error: Call to undefined method app\models\Buku::getHitungPenulis() in C:\xampp\htdocs\perpus\views\site\index.php:76
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#4 C:\xampp\htdocs\perpus\controllers\SiteController.php(76): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2017-09-14 06:09:19 [::1][7][p32e27h2c46mh5k634o913t5vo][info][application] $_COOKIE = [
+    '_csrf' => 'a9d36371786100cbf5e0f30abda5aeafb5eca2053d4efcee38aa7b228af6d689a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ÜDÔê¸ÀI27{T»½m’ØIœÔ%ÉËÀþ¢È˜KÒð\";}'
+    'PHPSESSID' => 'p32e27h2c46mh5k634o913t5vo'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=site%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=a9d36371786100cbf5e0f30abda5aeafb5eca2053d4efcee38aa7b228af6d689a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%DCD%D4%EA%B8%C0I27%7BT%BB%BDm%92%D8I%9C%D4%25%C9%CB%C0%FE%03%A2%C8%98K%1B%D2%F0%22%3B%7D; PHPSESSID=p32e27h2c46mh5k634o913t5vo; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '52042'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/perpus/web/index.php'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505362159.378
+    'REQUEST_TIME' => 1505362159
+]
+2017-09-14 06:47:42 [::1][7][tsuih16mn8pmaph33ee9tdfsqk][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "perpus/web/index.php". in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('perpus/web/inde...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-09-14 06:47:42 [::1][7][tsuih16mn8pmaph33ee9tdfsqk][info][application] $_GET = [
+    'r' => 'perpus/web/index.php'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f759925a5ef827ea037fc73e77852a952b4639ffddf4fa0f693bbd6048d12cdfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"‚Üó7§˜x…\0E¥EP—ÑÑ <ê®-ÜTš
+\";}'
+    'PHPSESSID' => 'tsuih16mn8pmaph33ee9tdfsqk'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=buku%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=f759925a5ef827ea037fc73e77852a952b4639ffddf4fa0f693bbd6048d12cdfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%82%14%DC%03%F37%A7%98%02x%85%00E%A5%11EP%97%D1%05%D1%A0%3C%EA%AE%18-%06%DCT%9A%0A%22%3B%7D; PHPSESSID=tsuih16mn8pmaph33ee9tdfsqk; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '53715'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=perpus%2Fweb%2Findex.php'
+    'REQUEST_URI' => '/perpus/web/index.php?r=perpus%2Fweb%2Findex.php'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505364462.062
+    'REQUEST_TIME' => 1505364462
+]
+2017-09-14 06:47:43 [::1][7][tsuih16mn8pmaph33ee9tdfsqk][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "perpus/web/index.php". in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('perpus/web/inde...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-09-14 06:47:43 [::1][7][tsuih16mn8pmaph33ee9tdfsqk][info][application] $_GET = [
+    'r' => 'perpus/web/index.php'
+]
+
+$_COOKIE = [
+    '_csrf' => 'f759925a5ef827ea037fc73e77852a952b4639ffddf4fa0f693bbd6048d12cdfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"‚Üó7§˜x…\0E¥EP—ÑÑ <ê®-ÜTš
+\";}'
+    'PHPSESSID' => 'tsuih16mn8pmaph33ee9tdfsqk'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=buku%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=perpus%2Fweb%2Findex.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=f759925a5ef827ea037fc73e77852a952b4639ffddf4fa0f693bbd6048d12cdfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%82%14%DC%03%F37%A7%98%02x%85%00E%A5%11EP%97%D1%05%D1%A0%3C%EA%AE%18-%06%DCT%9A%0A%22%3B%7D; PHPSESSID=tsuih16mn8pmaph33ee9tdfsqk; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '53723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=perpus%2Fweb%2Findex.php'
+    'REQUEST_URI' => '/perpus/web/index.php?r=perpus%2Fweb%2Findex.php'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505364463.699
+    'REQUEST_TIME' => 1505364463
+]
+2017-09-14 06:49:56 [::1][7][tsuih16mn8pmaph33ee9tdfsqk][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "perpus/web/index.php". in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('perpus/web/inde...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-09-14 06:49:56 [::1][7][tsuih16mn8pmaph33ee9tdfsqk][info][application] $_GET = [
+    'r' => 'perpus/web/index.php'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'tsuih16mn8pmaph33ee9tdfsqk'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+    '_csrf' => '5b2fefbfab38da8c26553ccd37b64c8c6fb81a41d27d4ff4e40d5cdc67708d91a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ûïÍ½sÏèÿœ&¶
+dí›e_À©A6Â¢oŸ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=buku%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=perpus%2Fweb%2Findex.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=tsuih16mn8pmaph33ee9tdfsqk; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D; _csrf=5b2fefbfab38da8c26553ccd37b64c8c6fb81a41d27d4ff4e40d5cdc67708d91a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%16%FB%EF%CD%BDs%CF%E8%FF%9C%26%B6%0Ad%ED%9B%06e_%1F%C0%0B%A9A6%14%C2%A2%05o%9F%07%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '53865'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=perpus%2Fweb%2Findex.php'
+    'REQUEST_URI' => '/perpus/web/index.php?r=perpus%2Fweb%2Findex.php'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505364596.098
+    'REQUEST_TIME' => 1505364596
+]
+2017-09-14 09:16:35 [::1][7][op3tdvm0r7klp06e5pfdbhu7lm][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "Fauzan". in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('Fauzan', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-09-14 09:16:35 [::1][7][op3tdvm0r7klp06e5pfdbhu7lm][info][application] $_GET = [
+    'r' => 'Fauzan'
+]
+
+$_COOKIE = [
+    '_csrf' => '240aefe7dc1de9689e126823ad084b1b84907c516a620a32daa0d2f19df70f64a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"²‚q„ó26È.õ°N|g 0ªbïÛgú{èl\";}'
+    'PHPSESSID' => 'op3tdvm0r7klp06e5pfdbhu7lm'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=240aefe7dc1de9689e126823ad084b1b84907c516a620a32daa0d2f19df70f64a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%B2%82%8D%90%16%90q%18%84%F326%C8.%14%F5%B0N%7Cg%A00%AAb%EF%DBg%FA%7B%01%E8l%22%3B%7D; PHPSESSID=op3tdvm0r7klp06e5pfdbhu7lm; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '55972'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=Fauzan'
+    'REQUEST_URI' => '/perpus/web/index.php?r=Fauzan'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505373395.376
+    'REQUEST_TIME' => 1505373395
+]
+2017-09-15 08:58:27 [::1][7][eftunsku9obpf43vmll8k5785j][error][ParseError] ParseError: syntax error, unexpected ''img'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in C:\xampp\htdocs\perpus\views\user\index.php:35
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\UserController))
+#3 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\UserController->actionIndex()
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2017-09-15 08:58:27 [::1][7][eftunsku9obpf43vmll8k5785j][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '055003b20fca2e9030168c7fd5bdc6e545a33e220a65e5ff49b2f508348098bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"(ÆU0–î*µRÛ¼)ˆù&u½½/È­ë?5è9B\";}'
+    'PHPSESSID' => 'eftunsku9obpf43vmll8k5785j'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=penerbit%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=peminjaman%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=055003b20fca2e9030168c7fd5bdc6e545a33e220a65e5ff49b2f508348098bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%28%C6%04U0%96%EE%2A%B5R%DB%BC%29%88%F9%26u%BD%11%BD%2F%8D%C8%AD%EB%0B%3F5%E8%139B%22%3B%7D; PHPSESSID=eftunsku9obpf43vmll8k5785j; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '54109'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505458707.74
+    'REQUEST_TIME' => 1505458707
+]
+2017-09-15 09:38:23 [::1][7][2i8ojth5bm68visks2qnk18rf6][error][Error] Error: Class 'app\controllers\UploadedFile' not found in C:\xampp\htdocs\perpus\controllers\UserController.php:91
+Stack trace:
+#0 [internal function]: app\controllers\UserController->actionCreate()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/create', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2017-09-15 09:38:23 [::1][7][2i8ojth5bm68visks2qnk18rf6][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'wCgbV-uEhMWvxYkd4ns-r5HWvT7tmDgoGe1quB7ixEB_X-luntjAF80ypkhGpEfPlrSd-oLeHmAlhw6HnteUPw=='
+    'User' => [
+        'nama' => 'farmin'
+        'username' => 'farmin'
+        'password' => 'farmin'
+        'img' => ''
+        'role' => '1'
+    ]
+]
+
+$_FILES = [
+    'User' => [
+        'name' => [
+            'img' => 'Bebas Sampah 2 10216_170212_0043.jpg'
+        ]
+        'type' => [
+            'img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'img' => 'C:\\xampp\\tmp\\php8E84.tmp'
+        ]
+        'error' => [
+            'img' => 0
+        ]
+        'size' => [
+            'img' => 284626
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'b54c0693d84057029e608ca3b8ae92accd2e2dc51f4fb8a73d7fc9402e1fbb1ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¿wò9u\\DÒb÷/U¤ßy`b ÄoF&H<jd?€5P\";}'
+    'PHPSESSID' => '2i8ojth5bm68visks2qnk18rf6'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '285532'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarynU3jlE65H8Gr1ex8'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b54c0693d84057029e608ca3b8ae92accd2e2dc51f4fb8a73d7fc9402e1fbb1ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%BFw%F29u%5CD%D2b%F7%2FU%A4%DFy%60%07b+%C4oF%26H%3Cjd%3F%805P%7F%22%3B%7D; PHPSESSID=2i8ojth5bm68visks2qnk18rf6; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '54815'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505461103.494
+    'REQUEST_TIME' => 1505461103
+]
+2017-09-15 09:48:34 [::1][7][2i8ojth5bm68visks2qnk18rf6][error][ParseError] ParseError: syntax error, unexpected '=', expecting ']' in C:\xampp\htdocs\perpus\views\user\index.php:38
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\UserController))
+#3 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\UserController->actionIndex()
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2017-09-15 09:48:33 [::1][7][2i8ojth5bm68visks2qnk18rf6][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b54c0693d84057029e608ca3b8ae92accd2e2dc51f4fb8a73d7fc9402e1fbb1ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¿wò9u\\DÒb÷/U¤ßy`b ÄoF&H<jd?€5P\";}'
+    'PHPSESSID' => '2i8ojth5bm68visks2qnk18rf6'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=user%2Fview&id=11'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b54c0693d84057029e608ca3b8ae92accd2e2dc51f4fb8a73d7fc9402e1fbb1ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%BFw%F29u%5CD%D2b%F7%2FU%A4%DFy%60%07b+%C4oF%26H%3Cjd%3F%805P%7F%22%3B%7D; PHPSESSID=2i8ojth5bm68visks2qnk18rf6; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '54881'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505461713.97
+    'REQUEST_TIME' => 1505461713
+]
+2017-09-15 09:48:50 [::1][7][2i8ojth5bm68visks2qnk18rf6][error][ParseError] ParseError: syntax error, unexpected '=', expecting ']' in C:\xampp\htdocs\perpus\views\user\index.php:38
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\UserController))
+#3 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\UserController->actionIndex()
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2017-09-15 09:48:50 [::1][7][2i8ojth5bm68visks2qnk18rf6][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b54c0693d84057029e608ca3b8ae92accd2e2dc51f4fb8a73d7fc9402e1fbb1ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¿wò9u\\DÒb÷/U¤ßy`b ÄoF&H<jd?€5P\";}'
+    'PHPSESSID' => '2i8ojth5bm68visks2qnk18rf6'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=user%2Fview&id=11'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b54c0693d84057029e608ca3b8ae92accd2e2dc51f4fb8a73d7fc9402e1fbb1ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%BFw%F29u%5CD%D2b%F7%2FU%A4%DFy%60%07b+%C4oF%26H%3Cjd%3F%805P%7F%22%3B%7D; PHPSESSID=2i8ojth5bm68visks2qnk18rf6; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '54888'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505461730.368
+    'REQUEST_TIME' => 1505461730
+]
+2017-09-15 09:49:28 [::1][7][2i8ojth5bm68visks2qnk18rf6][error][Error] Error: Class 'app\models\Html' not found in C:\xampp\htdocs\perpus\models\User.php:159
+Stack trace:
+#0 C:\xampp\htdocs\perpus\views\user\index.php(39): app\models\User->getImg(Array)
+#1 [internal function]: yii\base\View->{closure}(Object(app\models\User), 7, 0, Object(yii\grid\DataColumn))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\grid\DataColumn.php(219): call_user_func(Object(Closure), Object(app\models\User), 7, 0, Object(yii\grid\DataColumn))
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\grid\DataColumn.php(233): yii\grid\DataColumn->getDataCellValue(Object(app\models\User), 7, 0)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\grid\Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(app\models\User), 7, 0)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\grid\GridView.php(507): yii\grid\Column->renderDataCell(Object(app\models\User), 7, 0)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\grid\GridView.php(476): yii\grid\GridView->renderTableRow(Object(app\models\User), 7, 0)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\widgets\BaseListView.php(159): yii\grid\GridView->renderItems()
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\widgets\BaseListView.php(134): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\widgets\BaseListView.php(137): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Widget.php(139): yii\grid\GridView->run()
+#15 C:\xampp\htdocs\perpus\views\user\index.php(21): yii\base\Widget::widget(Array)
+#16 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#18 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#19 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\UserController))
+#20 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#21 [internal function]: app\controllers\UserController->actionIndex()
+#22 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#26 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#28 {main}
+2017-09-15 09:49:27 [::1][7][2i8ojth5bm68visks2qnk18rf6][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b54c0693d84057029e608ca3b8ae92accd2e2dc51f4fb8a73d7fc9402e1fbb1ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"¿wò9u\\DÒb÷/U¤ßy`b ÄoF&H<jd?€5P\";}'
+    'PHPSESSID' => '2i8ojth5bm68visks2qnk18rf6'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=user%2Fview&id=11'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b54c0693d84057029e608ca3b8ae92accd2e2dc51f4fb8a73d7fc9402e1fbb1ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%BFw%F29u%5CD%D2b%F7%2FU%A4%DFy%60%07b+%C4oF%26H%3Cjd%3F%805P%7F%22%3B%7D; PHPSESSID=2i8ojth5bm68visks2qnk18rf6; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '54895'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505461767.85
+    'REQUEST_TIME' => 1505461767
+]
+2017-09-15 10:52:49 [::1][7][6qv86fmrhlns2rlc9n86s683lk][error][Error] Error: Class 'Html' not found in C:\xampp\htdocs\perpus\views\layouts\left.php:8
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#3 C:\xampp\htdocs\perpus\views\layouts\main.php(50): yii\base\View->render('left.php', Array)
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="use...')
+#8 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#9 [internal function]: app\controllers\UserController->actionIndex()
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2017-09-15 10:52:49 [::1][7][6qv86fmrhlns2rlc9n86s683lk][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '21c6a794df732ad330d9a8ac775453ae4fe629f4a7ae52df175c3e10c46a40b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"?P81Øro-ÐÙ=¶è½h$Äý‡2n+e¥´ët\\\";}'
+    'PHPSESSID' => '6qv86fmrhlns2rlc9n86s683lk'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=21c6a794df732ad330d9a8ac775453ae4fe629f4a7ae52df175c3e10c46a40b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%3FP81%D8ro-%D0%D9%3D%B6%E8%BD%15h%24%05%C4%FD%872n%2Be%A5%B4%8F%EB%04t%5C%22%3B%7D; PHPSESSID=6qv86fmrhlns2rlc9n86s683lk; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '55573'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505465569.197
+    'REQUEST_TIME' => 1505465569
+]
+2017-09-15 10:53:42 [::1][7][6qv86fmrhlns2rlc9n86s683lk][error][ParseError] ParseError: syntax error, unexpected '/', expecting ',' or ';' in C:\xampp\htdocs\perpus\views\layouts\left.php:3
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#2 C:\xampp\htdocs\perpus\views\layouts\main.php(50): yii\base\View->render('left.php', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="use...')
+#7 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#8 [internal function]: app\controllers\UserController->actionIndex()
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-09-15 10:53:42 [::1][7][6qv86fmrhlns2rlc9n86s683lk][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '21c6a794df732ad330d9a8ac775453ae4fe629f4a7ae52df175c3e10c46a40b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"?P81Øro-ÐÙ=¶è½h$Äý‡2n+e¥´ët\\\";}'
+    'PHPSESSID' => '6qv86fmrhlns2rlc9n86s683lk'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=21c6a794df732ad330d9a8ac775453ae4fe629f4a7ae52df175c3e10c46a40b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%3FP81%D8ro-%D0%D9%3D%B6%E8%BD%15h%24%05%C4%FD%872n%2Be%A5%B4%8F%EB%04t%5C%22%3B%7D; PHPSESSID=6qv86fmrhlns2rlc9n86s683lk; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '55581'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505465622.222
+    'REQUEST_TIME' => 1505465622
+]
+2017-09-15 10:54:07 [::1][7][6qv86fmrhlns2rlc9n86s683lk][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\View::img in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\perpus\views\layouts\left.php(12): yii\base\Component->__get('img')
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\perpus\views\layouts\main.php(50): yii\base\View->render('left.php', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="use...')
+#9 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#10 [internal function]: app\controllers\UserController->actionIndex()
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#15 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-09-15 10:54:07 [::1][7][6qv86fmrhlns2rlc9n86s683lk][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '21c6a794df732ad330d9a8ac775453ae4fe629f4a7ae52df175c3e10c46a40b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"?P81Øro-ÐÙ=¶è½h$Äý‡2n+e¥´ët\\\";}'
+    'PHPSESSID' => '6qv86fmrhlns2rlc9n86s683lk'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=21c6a794df732ad330d9a8ac775453ae4fe629f4a7ae52df175c3e10c46a40b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%3FP81%D8ro-%D0%D9%3D%B6%E8%BD%15h%24%05%C4%FD%872n%2Be%A5%B4%8F%EB%04t%5C%22%3B%7D; PHPSESSID=6qv86fmrhlns2rlc9n86s683lk; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '55588'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505465647.061
+    'REQUEST_TIME' => 1505465647
+]
+2017-09-15 10:57:47 [::1][7][6qv86fmrhlns2rlc9n86s683lk][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: data in C:\xampp\htdocs\perpus\views\layouts\left.php:12
+Stack trace:
+#0 C:\xampp\htdocs\perpus\views\layouts\left.php(12): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\perpus\views\layouts\main.php(50): yii\base\View->render('left.php', Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="use...')
+#9 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#10 [internal function]: app\controllers\UserController->actionIndex()
+#11 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#15 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2017-09-15 10:57:47 [::1][7][6qv86fmrhlns2rlc9n86s683lk][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '21c6a794df732ad330d9a8ac775453ae4fe629f4a7ae52df175c3e10c46a40b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"?P81Øro-ÐÙ=¶è½h$Äý‡2n+e¥´ët\\\";}'
+    'PHPSESSID' => '6qv86fmrhlns2rlc9n86s683lk'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=21c6a794df732ad330d9a8ac775453ae4fe629f4a7ae52df175c3e10c46a40b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%3FP81%D8ro-%D0%D9%3D%B6%E8%BD%15h%24%05%C4%FD%872n%2Be%A5%B4%8F%EB%04t%5C%22%3B%7D; PHPSESSID=6qv86fmrhlns2rlc9n86s683lk; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '55605'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505465867.038
+    'REQUEST_TIME' => 1505465867
+]
+2017-09-15 11:03:33 [::1][7][6qv86fmrhlns2rlc9n86s683lk][error][Error] Error: Class 'Pjax' not found in C:\xampp\htdocs\perpus\views\user\index.php:23
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(330): require()
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#3 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\UserController))
+#4 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\UserController->actionIndex()
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#10 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2017-09-15 11:03:32 [::1][7][6qv86fmrhlns2rlc9n86s683lk][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '21c6a794df732ad330d9a8ac775453ae4fe629f4a7ae52df175c3e10c46a40b3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"?P81Øro-ÐÙ=¶è½h$Äý‡2n+e¥´ët\\\";}'
+    'PHPSESSID' => '6qv86fmrhlns2rlc9n86s683lk'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=21c6a794df732ad330d9a8ac775453ae4fe629f4a7ae52df175c3e10c46a40b3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%3FP81%D8ro-%D0%D9%3D%B6%E8%BD%15h%24%05%C4%FD%872n%2Be%A5%B4%8F%EB%04t%5C%22%3B%7D; PHPSESSID=6qv86fmrhlns2rlc9n86s683lk; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '55659'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505466212.926
+    'REQUEST_TIME' => 1505466212
+]
+2017-09-15 11:19:05 [::1][7][6qv86fmrhlns2rlc9n86s683lk][error][yii\base\ErrorException:2] yii\base\ErrorException: copy(/perpus/web/web/img/Bebas Sampah 2 10216_170212_00231520594345.jpg): failed to open stream: No such file or directory in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\UploadedFile.php:165
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'copy(/perpus/we...', 'C:\\xampp\\htdocs...', 165, Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\UploadedFile.php(165): copy('C:\\xampp\\tmp\\ph...', '/perpus/web/web...')
+#2 C:\xampp\htdocs\perpus\controllers\UserController.php(100): yii\web\UploadedFile->saveAs('/perpus/web/web...', false)
+#3 [internal function]: app\controllers\UserController->actionCreate()
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/create', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2017-09-15 11:19:05 [::1][7][6qv86fmrhlns2rlc9n86s683lk][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'bh2X8kSLf2Gm_Mm8XjsVQVKQbGAanpP1kK1SfCsTLIpC2Jjgm1m-vCLkafoCYOvu5PXyCAFuKp1w9mEi_bo2uQ=='
+    'User' => [
+        'nama' => 'wiwit'
+        'username' => 'wiwit'
+        'password' => 'wiwit'
+        'img' => ''
+        'role' => '2'
+    ]
+]
+
+$_FILES = [
+    'User' => [
+        'name' => [
+            'img' => 'Bebas Sampah 2 10216_170212_0023.jpg'
+        ]
+        'type' => [
+            'img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'img' => 'C:\\xampp\\tmp\\phpBFD6.tmp'
+        ]
+        'error' => [
+            'img' => 0
+        ]
+        'size' => [
+            'img' => 408116
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '6qv86fmrhlns2rlc9n86s683lk'
+    '_csrf' => '768f93bb65334498bd550638e2bdd64253d5bf445af79f7bef91263fcf755402a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\",ÅßÒÁÝ„ F\\[þ¯¶ežhð¹hà[3^Ö©3\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '409019'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryk3lHA856AaLMOEnm'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=6qv86fmrhlns2rlc9n86s683lk; _csrf=768f93bb65334498bd550638e2bdd64253d5bf445af79f7bef91263fcf755402a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%2C%C5%0F%12%DF%D2%C1%DD%84%18%A0F%5C%5B%FE%AF%B6e%9Eh%1B%F0%B9h%E0%5B3%5E%D6%A9%1A3%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '55762'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505467145.432
+    'REQUEST_TIME' => 1505467145
+]
+2017-09-15 11:19:28 [::1][7][6qv86fmrhlns2rlc9n86s683lk][error][yii\base\ErrorException:2] yii\base\ErrorException: copy(/perpus/web/img/Bebas Sampah 2 10216_170212_00231520594368.jpg): failed to open stream: No such file or directory in C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\UploadedFile.php:165
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'copy(/perpus/we...', 'C:\\xampp\\htdocs...', 165, Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\UploadedFile.php(165): copy('C:\\xampp\\tmp\\ph...', '/perpus/web/img...')
+#2 C:\xampp\htdocs\perpus\controllers\UserController.php(100): yii\web\UploadedFile->saveAs('/perpus/web/img...', false)
+#3 [internal function]: app\controllers\UserController->actionCreate()
+#4 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/create', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2017-09-15 11:19:28 [::1][7][6qv86fmrhlns2rlc9n86s683lk][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'bh2X8kSLf2Gm_Mm8XjsVQVKQbGAanpP1kK1SfCsTLIpC2Jjgm1m-vCLkafoCYOvu5PXyCAFuKp1w9mEi_bo2uQ=='
+    'User' => [
+        'nama' => 'wiwit'
+        'username' => 'wiwit'
+        'password' => 'wiwit'
+        'img' => ''
+        'role' => '2'
+    ]
+]
+
+$_FILES = [
+    'User' => [
+        'name' => [
+            'img' => 'Bebas Sampah 2 10216_170212_0023.jpg'
+        ]
+        'type' => [
+            'img' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'img' => 'C:\\xampp\\tmp\\php1A26.tmp'
+        ]
+        'error' => [
+            'img' => 0
+        ]
+        'size' => [
+            'img' => 408116
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '6qv86fmrhlns2rlc9n86s683lk'
+    '_csrf' => '768f93bb65334498bd550638e2bdd64253d5bf445af79f7bef91263fcf755402a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\",ÅßÒÁÝ„ F\\[þ¯¶ežhð¹hà[3^Ö©3\";}'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '409019'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryk3lHA856AaLMOEnm'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=6qv86fmrhlns2rlc9n86s683lk; _csrf=768f93bb65334498bd550638e2bdd64253d5bf445af79f7bef91263fcf755402a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%2C%C5%0F%12%DF%D2%C1%DD%84%18%A0F%5C%5B%FE%AF%B6e%9Eh%1B%F0%B9h%E0%5B3%5E%D6%A9%1A3%22%3B%7D; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '55766'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505467168.558
+    'REQUEST_TIME' => 1505467168
+]
+2017-09-15 11:38:22 [::1][7][sjehdqlp4bgjbm0k6bmm43c1tp][error][ParseError] ParseError: syntax error, unexpected ''header'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in C:\xampp\htdocs\perpus\views\user\index.php:28
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\UserController))
+#3 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\UserController->actionIndex()
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2017-09-15 11:38:22 [::1][7][sjehdqlp4bgjbm0k6bmm43c1tp][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '516c15cd23e28bcdb174f25250343ab5d2eac81218830f256578be845effa786a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KZÂÂ½R£çÍT{p–‰_$¢èÚ3X—«ét\";}'
+    'PHPSESSID' => 'sjehdqlp4bgjbm0k6bmm43c1tp'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=516c15cd23e28bcdb174f25250343ab5d2eac81218830f256578be845effa786a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K%8FZ%C2%C2%17%05%BDR%01%A3%E7%CDT%7Bp%96%89_%24%A2%E8%DA3X%1A%97%1C%11%AB%E9t%22%3B%7D; PHPSESSID=sjehdqlp4bgjbm0k6bmm43c1tp; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '56022'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505468302.02
+    'REQUEST_TIME' => 1505468302
+]
+2017-09-15 11:38:38 [::1][7][sjehdqlp4bgjbm0k6bmm43c1tp][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in C:\xampp\htdocs\perpus\views\user\index.php:30
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\UserController))
+#3 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\UserController->actionIndex()
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2017-09-15 11:38:38 [::1][7][sjehdqlp4bgjbm0k6bmm43c1tp][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '516c15cd23e28bcdb174f25250343ab5d2eac81218830f256578be845effa786a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KZÂÂ½R£çÍT{p–‰_$¢èÚ3X—«ét\";}'
+    'PHPSESSID' => 'sjehdqlp4bgjbm0k6bmm43c1tp'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=516c15cd23e28bcdb174f25250343ab5d2eac81218830f256578be845effa786a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K%8FZ%C2%C2%17%05%BDR%01%A3%E7%CDT%7Bp%96%89_%24%A2%E8%DA3X%1A%97%1C%11%AB%E9t%22%3B%7D; PHPSESSID=sjehdqlp4bgjbm0k6bmm43c1tp; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '56036'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505468318.728
+    'REQUEST_TIME' => 1505468318
+]
+2017-09-15 11:38:51 [::1][7][sjehdqlp4bgjbm0k6bmm43c1tp][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in C:\xampp\htdocs\perpus\views\user\index.php:30
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\UserController))
+#3 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\UserController->actionIndex()
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2017-09-15 11:38:51 [::1][7][sjehdqlp4bgjbm0k6bmm43c1tp][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '516c15cd23e28bcdb174f25250343ab5d2eac81218830f256578be845effa786a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KZÂÂ½R£çÍT{p–‰_$¢èÚ3X—«ét\";}'
+    'PHPSESSID' => 'sjehdqlp4bgjbm0k6bmm43c1tp'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=516c15cd23e28bcdb174f25250343ab5d2eac81218830f256578be845effa786a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K%8FZ%C2%C2%17%05%BDR%01%A3%E7%CDT%7Bp%96%89_%24%A2%E8%DA3X%1A%97%1C%11%AB%E9t%22%3B%7D; PHPSESSID=sjehdqlp4bgjbm0k6bmm43c1tp; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '56044'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505468331.832
+    'REQUEST_TIME' => 1505468331
+]
+2017-09-15 11:39:21 [::1][7][sjehdqlp4bgjbm0k6bmm43c1tp][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in C:\xampp\htdocs\perpus\views\user\index.php:30
+Stack trace:
+#0 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\UserController))
+#2 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\UserController))
+#3 C:\xampp\htdocs\perpus\controllers\UserController.php(55): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\UserController->actionIndex()
+#5 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('user/index', Array)
+#9 C:\xampp\htdocs\perpus\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\perpus\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2017-09-15 11:39:21 [::1][7][sjehdqlp4bgjbm0k6bmm43c1tp][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '516c15cd23e28bcdb174f25250343ab5d2eac81218830f256578be845effa786a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KZÂÂ½R£çÍT{p–‰_$¢èÚ3X—«ét\";}'
+    'PHPSESSID' => 'sjehdqlp4bgjbm0k6bmm43c1tp'
+    '_identity' => '830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[7,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/perpus/web/index.php?r=user%2Findex'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/perpus/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=516c15cd23e28bcdb174f25250343ab5d2eac81218830f256578be845effa786a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K%8FZ%C2%C2%17%05%BDR%01%A3%E7%CDT%7Bp%96%89_%24%A2%E8%DA3X%1A%97%1C%11%AB%E9t%22%3B%7D; PHPSESSID=sjehdqlp4bgjbm0k6bmm43c1tp; _identity=830d9bcd711116673f48e2baa96789ea94e8982123c8a276193a2f0c2467bf5ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B7%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\FPC\\2.6.4\\bin\\i386-Win32;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Andri\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/perpus/web/index.php'
+    'REMOTE_PORT' => '56051'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/perpus/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/perpus/web/index.php'
+    'PHP_SELF' => '/perpus/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1505468361.477
+    'REQUEST_TIME' => 1505468361
+]

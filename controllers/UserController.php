@@ -10,7 +10,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-
+use yii\web\UploadedFile;
 /**
  * UserController implements the CRUD actions for User model.
  */
@@ -87,6 +87,19 @@ class UserController extends Controller
 
         
         if ($model->load(Yii::$app->request->post())) {
+
+            $img = UploadedFile::getInstance($model, 'img');
+
+            if(is_object($img))
+            {
+                $model->img = $img->basename; //Returns trailing name component of path
+                $model->img .= Yii::$app->formatter->asTimestamp(date('Y-d-m h:i:s'));//Formats a date, time or datetime in a float number as UNIX timestamp (seconds since 01-01-1970).
+                $model->img .='.'.$img->extension;
+
+                $path = Yii::getAlias('@app').'/web/img/'.$model->img; //represent file paths or URLs // @app: Your application root directory
+                $img->saveAs($path, false);
+            }
+
                 $model->password = Yii::$app->getSecurity()->generatePasswordHash($model->password);
                 $model->save();
             return $this->redirect(['view', 'id' => $model->id]);

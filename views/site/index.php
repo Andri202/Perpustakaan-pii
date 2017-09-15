@@ -5,7 +5,7 @@ use app\models\Buku;
 use app\models\Penerbit;
 use app\models\Penulis;
 
-$this->title = 'My Yii Application';
+$this->title = 'Dashboard';
 ?>
 <div class="site-index">
 
@@ -51,23 +51,51 @@ $this->title = 'My Yii Application';
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
             </div>
         </div> -->
-    <div class="container">
-        <div class="text-center">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Jumlah Buku : </h3>
-                    <h1><?php echo (Buku::getHitungBuku()); ?></h1>
+
+
+        <div class="row">
+            <div class="col-lg-4 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-purple">
+                    <div class="inner">
+                        <p>Jumlah Buku :</p>
+
+                        <h3><?php echo (Buku::getHitungBuku()); ?></h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-book"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
-                <div class="col-md-4">
-                    <h3>Jumlah Penulis : </h3>
-                    <h1><?php echo (Penulis::getHitungPenulis()); ?></h1>
+            </div>
+            <div class="col-lg-4 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-green">
+                    <div class="inner">
+                        <p>Jumlah Penulis : </p>
+
+                        <h3><?php echo (Penulis::getHitungPenulis()); ?></h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-pencil"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
-                <div class="col-md-4">
-                    <h3>Jumlah Penerbit : </h3>
-                    <h1><?php echo (Penerbit::getHitungPenerbit()); ?></h1>
+            </div>
+            <div class="col-lg-4 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-red">
+                    <div class="inner">
+                        <p>Jumlah Penerbit :</p>
+
+                        <h3><?php echo (Penerbit::getHitungPenerbit()); ?></h3>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-paper-plane-o"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
         </div>
     </div>
     
-</div>
