@@ -3,22 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Peminjaman;
-use yii\data\ActiveDataProvider;
+use app\models\Setting;
+use app\models\SettingSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
-use yii\db\Query;
-use yii\db\BaseActiveRecord;
-use yii\filters\AccessControl;
-
-
-
 /**
- * PeminjamanController implements the CRUD actions for Peminjaman model.
+ * SettingController implements the CRUD actions for Setting model.
  */
-class PeminjamanController extends Controller
+class SettingController extends Controller
 {
     /**
      * @inheritdoc
@@ -26,16 +20,6 @@ class PeminjamanController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['index','create','update','view'],
-                'rules' => [
-                    [
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -46,22 +30,22 @@ class PeminjamanController extends Controller
     }
 
     /**
-     * Lists all Peminjaman models.
+     * Lists all Setting models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $dataProvider = new ActiveDataProvider([
-            'query' => Peminjaman::find(),
-        ]);
+        $searchModel = new SettingSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
+            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
 
     /**
-     * Displays a single Peminjaman model.
+     * Displays a single Setting model.
      * @param integer $id
      * @return mixed
      */
@@ -73,17 +57,13 @@ class PeminjamanController extends Controller
     }
 
     /**
-     * Creates a new Peminjaman model.
+     * Creates a new Setting model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-
     public function actionCreate()
     {
-        $model = new Peminjaman();
-
-        //$model->waktu_dipinjam = ;
-        $model->denda =0;
+        $model = new Setting();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -95,7 +75,7 @@ class PeminjamanController extends Controller
     }
 
     /**
-     * Updates an existing Peminjaman model.
+     * Updates an existing Setting model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -114,7 +94,7 @@ class PeminjamanController extends Controller
     }
 
     /**
-     * Deletes an existing Peminjaman model.
+     * Deletes an existing Setting model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -127,15 +107,15 @@ class PeminjamanController extends Controller
     }
 
     /**
-     * Finds the Peminjaman model based on its primary key value.
+     * Finds the Setting model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Peminjaman the loaded model
+     * @return Setting the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Peminjaman::findOne($id)) !== null) {
+        if (($model = Setting::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

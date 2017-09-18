@@ -4,21 +4,15 @@ namespace app\controllers;
 
 use Yii;
 use app\models\Peminjaman;
-use yii\data\ActiveDataProvider;
+use app\models\PengembalianSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
-use yii\db\Query;
-use yii\db\BaseActiveRecord;
-use yii\filters\AccessControl;
-
-
-
 /**
- * PeminjamanController implements the CRUD actions for Peminjaman model.
+ * PengembalianController implements the CRUD actions for Peminjaman model.
  */
-class PeminjamanController extends Controller
+class PengembalianController extends Controller
 {
     /**
      * @inheritdoc
@@ -26,16 +20,6 @@ class PeminjamanController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['index','create','update','view'],
-                'rules' => [
-                    [
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -51,11 +35,11 @@ class PeminjamanController extends Controller
      */
     public function actionIndex()
     {
-        $dataProvider = new ActiveDataProvider([
-            'query' => Peminjaman::find(),
-        ]);
+        $searchModel = new PengembalianSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
+            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
@@ -77,13 +61,9 @@ class PeminjamanController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-
     public function actionCreate()
     {
         $model = new Peminjaman();
-
-        //$model->waktu_dipinjam = ;
-        $model->denda =0;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -104,7 +84,9 @@ class PeminjamanController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+            $model->kembali = true;
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [

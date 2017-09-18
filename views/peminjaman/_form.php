@@ -11,6 +11,8 @@ use kartik\date\DatePicker;
 /* @var $this yii\web\View */
 /* @var $model app\models\Peminjaman */
 /* @var $form yii\widgets\ActiveForm */
+$date = date('Y-m-d');
+$model->waktu_pengembalian = date('Y-m-d', strtotime($date.'+7 days'));
 ?>
 
 <div class="peminjaman-form">

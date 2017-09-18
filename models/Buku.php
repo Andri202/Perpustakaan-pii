@@ -51,6 +51,10 @@ class Buku extends \yii\db\ActiveRecord
         ];
     }
 
+    public function getBuku(){
+        return $this->hasOne(Buku::classname(), ['id' => 'id_buku']);
+    }
+
     public function getJenis()
     {
         return $this->hasOne(Jenis::className(), ['id' => 'id_jenis']); //sama aja
@@ -99,9 +103,7 @@ class Buku extends \yii\db\ActiveRecord
             return $this->penerbit->nama;
         } else {
             return null;    
-        }
-
-        
+        }   
     }
     
     public static function getHitungBuku(){

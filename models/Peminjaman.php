@@ -4,6 +4,8 @@ namespace app\models;
 
 use Yii;
 
+use app\models\Setting;
+
 /**
  * This is the model class for table "peminjaman".
  *
@@ -31,7 +33,7 @@ class Peminjaman extends \yii\db\ActiveRecord
         return [
             [['id_buku', 'id_user', 'waktu_pengembalian'], 'required'],
             [['id_buku', 'id_user'], 'integer'],
-            [['waktu_pengembalian','waktu_dipinjam'], 'safe']
+            [['waktu_pengembalian', 'denda','waktu_dipinjam'], 'safe']
         ];
     }
 
@@ -78,6 +80,58 @@ class Peminjaman extends \yii\db\ActiveRecord
         // ...custom code here...
         return parent::beforeSave($insert);
     }
-     
+
+    public function getLamaPinjam() // Menghitung Interval Hari antar dua tanggal
+    {
+        // $rows = (new \yii\db\Query())
+        // ->select(['waktu_dipinjam'])
+        // ->from('peminjaman');
+
+        $model = $this->find()
+        ->andWhere(['id'=> $this->id])
+        ->one();
+
+        // $date = $model->waktu_dipinjam;
+        // $data = explode("-", $date);
+        // $hari = ($data[0]*365)
+
+        // '%y Year %m Month %d Day %h Hours %i Minute %s Seconds'
+
+        $datetime1 = date_create($model->waktu_dipinjam); // mengkonsversikan format string ke date 
+        $datetime2 = date_create($model->waktu_pengembalian);
+
+        $interval = date_diff($datetime1,$datetime2); //menghitung interval
+
+        return $interval->format('%a');
+    }    
+
+    public function getDenda() //menghitung denda
+    {
+        $hari = $this->getLamaPinjam();
+
+        $max_pinjam = Setting::getSetting()->max_hari;
+        $hrg_denda = Setting::getSetting()->hrg_denda;
+
+        if ($hari > $max_pinjam) {
+            $denda = ($hari-$max_pinjam)*$hrg_denda;
+        } else{
+            $denda =0;
+        }
+
+        return $denda;
+    }
+
+    public function getKembali()
+    {
+        $model = $this->find()
+        ->andWhere(['id'=>$this->id])
+        ->one();
+
+        if ($model->kembali == false){
+            return "Belum di kembalikan";
+        } else {
+            return "Sudah di kembalikan";
+        }
+    } 
 
 }

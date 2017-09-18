@@ -36,7 +36,9 @@
                     ['label' => 'Daftar Penulis','icon' => 'pencil', 'url' => ['/penulis/index']],
                     ['label' => 'Daftar Penerbit','icon' => 'paper-plane', 'url' => ['/penerbit/index']],
                     ['label' => 'Daftar Peminjaman','icon' => 'arrow-circle-down', 'url' => ['/peminjaman/index']],
+                    ['label' => 'Daftar pengembalian','icon' => 'reply', 'url' => ['/pengembalian/index']],
                     ['label' => 'Daftar User','icon' => 'users', 'url' => ['/user/index']],
+                    ['label' => 'Setting','icon' => 'key', 'url' => ['/setting/view', 'id' => '1']],
                     
 
                     ['label' => 'SISTEM','options' => ['class' => 'header']],

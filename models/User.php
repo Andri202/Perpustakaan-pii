@@ -130,6 +130,10 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
         return ArrayHelper::map(User::find()->all(), 'id', 'nama');
     }
 
+    public function getUser(){
+        return $this->hasOne(User::classname(), ['id' => 'id_user']);
+    }
+
     public function getRoleInfo()
     {
         return $this->hasOne(Role::className(), ['id' => 'role']);
