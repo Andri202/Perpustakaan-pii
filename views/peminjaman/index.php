@@ -9,10 +9,13 @@ use yii\grid\GridView;
 $this->title = 'Peminjaman';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="peminjaman-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-
+<div class="peminjaman-index box box-primary">
+    
+    <div class="box-header">
+        <h1><?= Html::encode($this->title) ?></h1>
+        <hr>
+    </div>
+    <div class="box-body">
     <p>
         <?= Html::a('Create Peminjaman', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
@@ -29,18 +32,11 @@ $this->params['breadcrumbs'][] = $this->title;
                     return Html::a($data->user->nama, ['/user/view', 'id' => $data->id_user]);
                 }
             ],
-            [
-                'attribute' =>'id_buku',
-                'label' => 'Judul Buku',
-                'format' => 'raw',
-                'value' => function($data){
-                    return Html::a($data->buku->nama, ['/buku/view', 'id' => $data->id_buku]);
-                }
-            ],
             'waktu_dipinjam',
             'waktu_pengembalian',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+</div>
 </div>

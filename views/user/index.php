@@ -10,11 +10,10 @@ $this->title = 'Data User';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="user-index box box-primary">
-<div class="user-index">
 
     <div class="box-header">
         <h1><?= Html::encode($this->title) ?></h1>
-
+        <hr>
         <p>
             <?= Html::a('<i class="fa fa-plus"></i> Tambah User',['create'],['class'=>'btn btn-success btn-flat'])?>
         </p>
@@ -54,6 +53,5 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
-</div>
 </div>
 </div>

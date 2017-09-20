@@ -86,6 +86,10 @@ class PengembalianController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
             $model->kembali = true;
+
+            $sql = "UPDATE buku_pinjam SET kembali='1' WHERE id_peminjaman = ".$model->id;
+            Yii::$app->db->createCommand($sql)->execute();
+
             $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {

@@ -11,29 +11,32 @@ use app\models\JenisKelamin;
 $this->title = 'Penulis';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="penulis-index">
+<div class="penulis-index box box-primary">
+    <div class="box-header">
+        <h1><?= Html::encode($this->title) ?></h1>
+        <hr>
+    </div>
+    <div class="box-body">
+        <p>
+            <?= Html::a('Create Penulis', ['create'], ['class' => 'btn btn-success']) ?>
+        </p>
+        <?= GridView::widget([
+            'dataProvider' => $dataProvider,
+            'columns' => [
+                ['class' => 'yii\grid\SerialColumn'],
 
-    <h1><?= Html::encode($this->title) ?></h1>
+                'nama',
+                [
+                    'attribute'=>'id_jenis_kelamin',
+                    'label'=>'Jenis Kelamin',
+                    'value'=> function($data){
+                            return $data->jenisKelamin->nama;
+                    }
+                ],
+                'alamat:ntext',
 
-    <p>
-        <?= Html::a('Create Penulis', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            'nama',
-            [
-                'attribute'=>'id_jenis_kelamin',
-                'label'=>'Jenis Kelamin',
-                'value'=> function($data){
-                        return $data->jenisKelamin->nama;
-                }
+                ['class' => 'yii\grid\ActionColumn'],
             ],
-            'alamat:ntext',
-
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
+        ]); ?>
+    </div>
 </div>

@@ -10,11 +10,12 @@ use yii\grid\GridView;
 $this->title = 'Settings';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="setting-index">
-
+<div class="setting-index box box-primary">
+    <div class="box-header">
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
+    </div>
+    <div class="box-body">
     <p>
         <?= Html::a('Create Setting', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
@@ -32,4 +33,5 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+    </div>
 </div>

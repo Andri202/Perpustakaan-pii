@@ -43,6 +43,7 @@
 
                     ['label' => 'SISTEM','options' => ['class' => 'header']],
                     ['label' => 'Profil','icon' => 'user', 'url' => ['/user/view', 'id' => Yii::$app->user->identity->id]],
+                    ['label' => 'Test','icon' => 'arrow-circle-down', 'url' => ['/peminjaman/test']],
                     ['label' => 'Logout','icon' => 'sign-out', 'url' => ['site/logout'], 'template' => '<a href="{url}" data-method="post">{icon} {label}</a>' , 'visible' => !Yii::$app->user->isGuest],
                     [
                         'label' => 'Same tools',

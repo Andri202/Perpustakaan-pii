@@ -9,19 +9,16 @@ use yii\widgets\ActiveForm;
 ?>
 
 <div class="setting-form">
+	    <?php $form = ActiveForm::begin(); ?>
+	    <?= $form->field($model, 'max_hari')->textInput() ?>
 
-    <?php $form = ActiveForm::begin(); ?>
+	    <?= $form->field($model, 'hrg_denda')->textInput() ?>
 
-    <?= $form->field($model, 'max_hari')->textInput() ?>
+	    <?= $form->field($model, 'max_buku')->textInput() ?>
 
-    <?= $form->field($model, 'hrg_denda')->textInput() ?>
+	    <div class="form-group">
+	        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+	    </div>
 
-    <?= $form->field($model, 'max_buku')->textInput() ?>
-
-    <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-    </div>
-
-    <?php ActiveForm::end(); ?>
-
+	    <?php ActiveForm::end(); ?>
 </div>

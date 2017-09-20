@@ -14,25 +14,18 @@ use app\models\Buku;
 $this->title = 'Pengembalian';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="peminjaman-index">
-
+<div class="peminjaman-index box box-primary">
+    <div class="box-header">
     <h1><?= Html::encode($this->title) ?></h1>
+    <hr>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
+    </div>
+    <div class="box-body">
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            [
-                'attribute' => 'id_buku',
-                'label' => 'Judul Buku',
-                'value' => function($data){
-                    return $data->buku->nama;
-                }
-
-            ],
             [
                 'attribute' => 'id_user',
                 'label' => 'Nama',
@@ -53,4 +46,5 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' =>ActionColumn::className(),'template'=>'{update}'],
         ],
     ]); ?>
+</div>
 </div>

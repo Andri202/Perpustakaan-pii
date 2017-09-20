@@ -32,14 +32,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             [
-                'attributes' => 'id_buku',
-                'label' => 'Judul Buku',
-                'format' => 'raw',
-                'value' => function($data){
-                    return $data->buku->nama;
-                }
-            ],
-            [
                 'attributes' => 'id_user',
                 'label' => 'Nama User',
                 'format' => 'raw',

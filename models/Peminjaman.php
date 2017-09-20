@@ -31,7 +31,7 @@ class Peminjaman extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_buku', 'id_user', 'waktu_pengembalian'], 'required'],
+            [['id_user', 'waktu_pengembalian'], 'required'],
             [['id_buku', 'id_user'], 'integer'],
             [['waktu_pengembalian', 'denda','waktu_dipinjam'], 'safe']
         ];
@@ -44,7 +44,6 @@ class Peminjaman extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'id_buku' => 'Id Buku',
             'id_user' => 'Id User',
             'waktu_dipinjam' => 'Waktu Dipinjam',
             'waktu_pengembalian' => 'Waktu Pengembalian',
@@ -55,10 +54,10 @@ class Peminjaman extends \yii\db\ActiveRecord
         return $this->hasOne(User::classname(), ['id' => 'id_user']);
     }
 
-    public function getBuku()
-    {
-        return $this->hasOne(Buku::className(), ['id' => 'id_buku']);
-    }
+    // public function getBuku()
+    // {
+    //     return $this->hasOne(Buku::className(), ['id' => 'id_buku']);
+    // }
 
     //     public function beforeSave($insert) {
     //     if ( $this->isNewRecord) {
@@ -79,6 +78,24 @@ class Peminjaman extends \yii\db\ActiveRecord
     
         // ...custom code here...
         return parent::beforeSave($insert);
+    }
+
+    public function afterSave($insert, $changedAttributes)
+    {
+        if ($insert == true)
+        {
+
+            $id_bk =$this->id_buku;
+
+            $id_pm = Yii::$app
+                ->db
+                ->createCommand('SELECT id FROM peminjaman ORDER BY id DESC LIMIT 1')
+                ->queryScalar(); 
+
+            $sql = "INSERT INTO buku_pinjam(id_buku,id_peminjaman) VALUES('".$id_bk."','".$id_pm."')";
+            Yii::$app->db->createCommand($sql)->execute();
+        }
+
     }
 
     public function getLamaPinjam() // Menghitung Interval Hari antar dua tanggal
@@ -132,6 +149,7 @@ class Peminjaman extends \yii\db\ActiveRecord
         } else {
             return "Sudah di kembalikan";
         }
-    } 
+    }
+
 
 }

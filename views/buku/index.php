@@ -14,10 +14,13 @@ use yii\grid\ActionColumn;
 $this->title = 'Buku';
 // $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="buku-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+<div class="buku-index box box-primary">
+    <div class="box-header">
+        <h1><?= Html::encode($this->title) ?></h1>
+        <hr>
+        <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    </div>
+    <div class="box-body">
     <?php if(User::isAdmin()){ ?>
     <p>
         <?= Html::a('Create Buku', ['create'], ['class' => 'btn btn-success']) ?>
@@ -97,4 +100,5 @@ $this->title = 'Buku';
     ] );
 
         }
-     Pjax::end(); ?></div>    
+     Pjax::end(); ?></div>
+ </div>    

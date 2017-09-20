@@ -10,29 +10,32 @@ $this->title = $model->nama;
 $this->params['breadcrumbs'][] = ['label' => 'Penulis', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="penulis-view">
+<div class="penulis-view box box-primary">
+    <div class="box-header">
+        <h1><?= Html::encode($this->title) ?></h1>
+        <hr>
+    </div>
+    <div class="box-body">
+        <p>
+            <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+            <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+                'class' => 'btn btn-danger',
+                'data' => [
+                    'confirm' => 'Are you sure you want to delete this item?',
+                    'method' => 'post',
+                ],
+            ]) ?>
+        </p>
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
+        <?= DetailView::widget([
+            'model' => $model,
+            'attributes' => [
+                'id',
+                'nama',
+                'id_jenis_kelamin',
+                'alamat:ntext',
             ],
         ]) ?>
-    </p>
-
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'id',
-            'nama',
-            'id_jenis_kelamin',
-            'alamat:ntext',
-        ],
-    ]) ?>
+    </div>
 
 </div>
